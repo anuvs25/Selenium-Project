@@ -11,8 +11,8 @@ public class SimpleJava {
 	
 	public static void main(String[] args) {
 		SimpleJava ob = new SimpleJava();
-		System.out.println("The number is two digit....");
-		System.out.println(ob.IsNumberTwoDigit(150));
+		System.out.println("Checking number is two digit or not....");
+		System.out.println(ob.IsNumberTwoDigit(4500));
 	}
 
 }
