@@ -16,6 +16,7 @@ public class IframeHandling {
 		// Method Overloading
 		driver.switchTo().frame(0);
 		driver.switchTo().frame("frame-middle");
+		//driver.switchTo().frame(1);
 		
 		WebElement iframe_txt = driver.findElement(By.xpath("//div[@id='content']"));
 		System.out.println(iframe_txt.getText());
