@@ -1,5 +1,7 @@
 package seleniumassignment;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +19,7 @@ public class AssignmentTwelve {
 		System.setProperty("webdriver.chrome.driver", "D:\\Testing\\ObsquraSelenium\\LocalDrivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://formy-project.herokuapp.com/form");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		
 		WebElement first_name = driver.findElement(By.xpath("//input[@id='first-name']"));
@@ -34,7 +37,6 @@ public class AssignmentTwelve {
 		exp_ob.selectByValue("4");
 		WebElement submit_btn = driver.findElement(By.xpath("//a[@class='btn btn-lg btn-primary']"));
 		submit_btn.click();
-		driver.get("https://formy-project.herokuapp.com/thanks");
 		WebElement message = driver.findElement(By.xpath("//h1[text()='Thanks for submitting your form']"));
 		System.out.println(message.getText());
 
