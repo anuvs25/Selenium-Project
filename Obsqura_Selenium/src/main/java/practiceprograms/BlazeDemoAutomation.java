@@ -1,6 +1,5 @@
 package practiceprograms;
 
-import java.lang.reflect.Array;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
