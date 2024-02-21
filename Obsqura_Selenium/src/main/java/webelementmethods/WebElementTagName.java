@@ -14,7 +14,7 @@ public class WebElementTagName {
 		driver.manage().window().maximize();
 		
 		WebElement reset = driver.findElement(By.xpath("//input[@type='reset']"));
-		System.out.println("Tag Name of reset button : "+reset.getTagName());
+		System.out.println("Tag Name of reset button : " + reset.getTagName());
 		
 
 	}

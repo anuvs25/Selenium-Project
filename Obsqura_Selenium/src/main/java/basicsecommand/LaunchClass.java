@@ -30,7 +30,7 @@ public class LaunchClass {
 //		driver.manage().window().maximize(); // maximize the screen
 //		System.out.println(driver.getTitle());
 		
-		driver.get(driver.getCurrentUrl()); // refresh the current url page
+		driver.get(driver.getCurrentUrl()); // returns the current url page
 //		System.out.println(driver.getPageSource()); // returns the code of the page
 		
 //		WebElement prdsearch = driver.findElement(By.name("field-keywords"));
