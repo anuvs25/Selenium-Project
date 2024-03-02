@@ -17,11 +17,11 @@ public class FileUploadsSample {
 		
 		WebElement choose_filebtn = driver.findElement(By.xpath("//input[@id='file-upload']"));
 		String file_location = "D:\\EmployeeDetails.xlsx";
-//		choose_filebtn.sendKeys(file_location);
+		//choose_filebtn.sendKeys(file_location);
 		
 //		Using file method
 		File file_det = new File(file_location);
-//		file_location.sendKeys(file_det.getAbsolutePath());
+		choose_filebtn.sendKeys(file_det.getAbsolutePath());
 		
 //		File file= new File(location);
 //		choose_file.sendKeys(file.getAbsolutePath());

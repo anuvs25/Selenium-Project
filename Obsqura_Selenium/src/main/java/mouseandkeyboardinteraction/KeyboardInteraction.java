@@ -22,7 +22,7 @@ public class KeyboardInteraction {
 //		prd_search.sendKeys("shirts");
 //		prd_search.sendKeys(Keys.BACK_SPACE);
 		
-		prd_search.sendKeys("shirts search");
+		prd_search.sendKeys("shirts");
 		prd_search.sendKeys(Keys.chord(Keys.CONTROL,"A"));
 		prd_search.sendKeys(Keys.DELETE);
 		
